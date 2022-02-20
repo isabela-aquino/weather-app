@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;500;600&display=swap');
+
+body, button, input, select, textarea{
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+    margin: 0;
+}
+
+h2{
+    width: 700px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+
+:root{
+    --dark-blue: #100E1D;
+    --light-blue: #1e2132;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 400px auto;
+    grid-template-rows: 100vh;
+}
+
+.container .temp-today{
+    width: 100%;
+    height: 100%;
+    background: var(--light-blue);
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+
+.container .right{
+    background: var(--dark-blue);
+    z-index: 9;
+}
+
+.container .temp-today .background-image{
+    width: 600px;
+    opacity: 4%;
+    position: relative;
+    margin-top: 10px;
+    
+}
+
+.container .temp-today .icon-main{
+    width: 150px;
+    height: 182px;
+    margin-top: 100px;  
+    position: absolute;
+}
+
+.container .temp-today .temperature{
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+    position: absolute;
+    top: 280px;
+}
+
+.container .temp-today .temperature span{
+    align-self: flex-end;
+    font-size: 48px;
+    font-weight: 100;
+}
+
+.container .temp-today .temperature h1{
+    font-weight: 600;
+    font-size: 134px;
+    margin: 0;
+}
+
+.container .temp-today h5{
+    font-size: 36px;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-bottom: 0;
+    position: absolute;
+    bottom: 120px;
+}
+
+.container .temp-today .day-today{
+    font-weight: 500;
+    font-size: 14px;
+    margin-top: 30px;
+    position: absolute;
+    bottom: 50px;
+
+}
+.container .temp-today .city{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: calc(50% - 7px);
+    position: absolute;
+    bottom: 10px;
+}
+.container .temp-today .city p{
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: 600;
+    
+}
+.container .temp-today .city svg{
+    width: 14px;
+    height: 14px;
+    margin: 5px;
+}
+
+.right{
+    
+
+}
+
+.right .weather-week{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.right .weather-week  .weather-day img{
+    width: 60px;
+    margin-bottom: 25px;
+}
+
+.right .weather-week  .weather-day {
+    background: #1e2132;
+    width: 120px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: auto 10px;
+}
+
+.weather-day + .weather-day{
+    margin-left: 25px;
+}
+
+.right .weather-week .weather-day .temperature{
+    width: 100%;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.right .hightlights{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+    width: 700px;
+    margin: auto;
+}
+
+.hightlights-container + .hightlights-container{
+    margin-bottom: 20px;
+}
+
+.right .hightlights .hightlights-container{
+    background: #1e2132;
+    width: 330px;
+    height: 150px;
+    text-align: center;
+    
+}
+
+.right .hightlights .hightlights-container p{
+    margin-top: 20px;
+}
+
+.right .hightlights .hightlights-container .number-hightlights{
+    font-size: 45px;
+    font-weight: 600;
+}
+
+.right .hightlights .hightlights-container span{
+    font-size: 26px;
+}
