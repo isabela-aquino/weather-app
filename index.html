@@ -14,13 +14,15 @@
         <div class="temp-today">
 
            <img src="image/Cloud-background.png" alt="" class="background-image">
-            <img class="icon-main" src="image/Shower.png" alt="">
+           <div class="icon">
+                <img class="icon-main" src="image/Shower.png" alt="">
+           </div>
             <div class="temperature">
                 <h1>15</h1>
                 <span>°C</span>
             </div>
 
-            <h5>Shower</h5>
+            <h5 class="weather">Shower</h5>
             <p class="day-today">Today - Fri, 5 Jun</p>
             <div class="city">
                 <i data-feather="map-pin"></i>
@@ -74,28 +76,27 @@
                     </div>
                 </div>
             </div>  
-            <h2>Today's Hightlights</h2>
+            <h2>Detalhes de Hoje</h2>
             <div class="hightlights">
                 
-                <div class="hightlights-container">
-                    <p>Wind status</p>
+                <div class="wind_status hightlights-container">
+                    <p>Vento</p>
                     <span class="number-hightlights">7</span>
-                    <span>mph</span>
+                    <span>km/h</span>
                     <p>WSW</p>
                 </div>
-                <div class="hightlights-container">
-                    <p>Humidity</p>
+                <div class="humidity hightlights-container">
+                    <p>Umidade</p>
                     <span class="number-hightlights">84</span>
                     <span>%</span>
-                    <p>WSW</p>
                 </div>
-                <div class="hightlights-container">
-                    <p>Visibility</p>
+                <div class="visibility hightlights-container">
+                    <p>Visibilidade</p>
                     <span class="number-hightlights">6,4</span>
-                    <span>miles</span>
+                    <span>km</span>
                 </div>
-                <div class="hightlights-container">
-                    <p>Air Pressure</p>
+                <div class="air_pressure hightlights-container">
+                    <p>Pressão do Ar</p>
                     <span class="number-hightlights">998</span>
                     <span>mb</span>
                 </div>
@@ -104,6 +105,8 @@
     </div>
     <script>
         feather.replace();
-      </script>
+    </script>
+    <script src="script.js"></script>
+    
 </body>
 </html>

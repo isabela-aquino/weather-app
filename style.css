@@ -53,11 +53,14 @@ h2{
     
 }
 
-.container .temp-today .icon-main{
-    width: 150px;
-    height: 182px;
-    margin-top: 100px;  
+.container .temp-today .icon{
+    margin-top: 60px;
     position: absolute;
+}
+
+.container .temp-today .icon-main{
+    width: auto;
+    height: auto;
 }
 
 .container .temp-today .temperature{
